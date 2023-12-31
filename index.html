@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+<!-- ========================== file fontAwesome ============================ -->
+    <link rel="stylesheet" href="css/all.min.css">
+<!-- ========================== file bootstrab============================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ========================== file cssStyle============================ -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+   <!-- ------------------- START   Navbar section     --------------------------- -->
+   <section class="is_navbar w-100 fixed-top bg-black text-white">
+    <nav class="navbar navbar-expand-lg bg-transparent py-4 box_shadow_full ">
+      <div class="container ">
+        <!-- <a class="navbar-brand " href="#">DevFolio</a> -->
+
+        <a class="branding" href="">
+            <img src="images/logo.png" alt="" class="logo">
+            <div class="logo-type">
+                <h1 class="site-title">Weather</h1>
+                <small class="site-description">tagline goes here</small>
+            </div>
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+        
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fa fa-bars"></i>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-5">
+            <li class="nav-item">
+              <a class="nav-link active  home-link" aria-current="page" href="#">Home</a>
+              <div class="line_link"></div>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">News</a>
+              <div class="line_link"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Live cameras</a>
+              <div class="line_link"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Photos</a>
+              <div class="line_link"></div>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#blog">Contact</a>
+              <div class="line_link"></div>
+            </li> -->
+
+       
+           
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> CONTACT</a>
+              <div class="line_link"></div>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- -------------------  END  Navbar section     --------------------------- -->
+ 
+    <!-- ======================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <header class="position-relative w-100 ">
+
+        <!-- =============  inputSearch     ================ -->
+        <section class=" d-flex flex-column my-5 py-5 container ">
+            <div class="inputSearch">
+               
+                <input id="" type="text" placeholder="&#xf002 Search City " style="font-family: Arial, FontAwesome"
+                class=" border-1  w-100 rounded-pill p-2 ">
+          
+            </div>
+          
+
+ <!-- ==============     cityTemp    ===================== -->
+
+            <section class="cityTemp  
+              w-100 m-auto d-flex justify-content-center container">
+               
+
+                <!-- ==============     tempToday    ===================== -->
+
+
+
+               
+
+            
+                <div class="temp ">
+                    <!-- =========     tempDate   ========= -->
+                    <div class="temCaption  next">
+                  <div class="tempDate    px-3  pt-2 ">
+                      <p id="today">Thursday</p>
+                      <p id="month"> <span id="todayDate">1</span>Dec</p>
+                  </div>
+                           <!-- =========     tempContent    ========= -->
+                           <div class="tempBody  tempBody_h  ">
+
+                           
+                  <div class="tempContent w-100 px-3 py-2   ">
+                      <p class="city  mt-5" id="locationName">Cairo</p>
+                
+                      <div class="tempImg w-100 d-flex justify-content-between   h-auto ">
+                      <h2 id="temp_c" class="" > <span class="supA">o</span> <span class="supC">C</span></h2>
+                      <img  width="50px" height="" class="border border-1" id="conditionImage">
+                  </div>
+                      <p class="sunny" id="clear"></p>
+                  </div>
+                    
+                  <!-- =========     detalise   ========= -->
+                  <div class="detalise d-flex   px-3 py-1  align-items-center   ">
+                      <p id="humidity" class="me-3"><span><i class="fas fa-umbrella pr-1" ></i></span> 50  <span>%</span></p> 
+                      <p id="wind_kph" class="me-3"><span><i class="fas fa-wind pl-3 pr-1"></i></span> 3.6 <span>km/h</span></p> 
+                      <p id="wind_dir" class=""><span><i class="far fa-compass pl-3 pr-1"></i></span>N</p> 
+                      
+                
+                  </div>
+                
+                </div>
+                   </div>
+                   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ==============     tempTomorow   ===================== -->
+
+      
+  <div class="temp   tempTomorrow">
+    <!-- =========     tempDate   ========= -->
+    <div class="temCaption ">
+  <div class="tempDate    px-3  pt-3">
+      <p  class="tomorrow">Friday</p>
+      
+  </div>
+           <!-- =========     tempContent    ========= -->
+       
+  <div class="tomContent w-100 py-5 px-3 tempCont_h ">
+    <img src="" width="50px " class="" id="tomImage">
+    <h2 class="" id="maxTemp_c" ><span class="supA">o</span> <span class="supC">C</span></h2>
+    <p class="py-1" id="minTemp_c"><span class="supA">o</span> <span class="supC">C</span></p>
+    <p class="sunny mb-3 mt-3" id="tomClear"></p>
+  
+    
+ 
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- ==============     tempTomorow   ===================== -->
+
+
+     
+
+
+      
+<div class="temp   tempTomorrow">
+    <!-- =========     tempDate   ========= -->
+    <div class="temCaption ">
+  <div class="tempDate    px-3  pt-3">
+      <p  class="tomorrow">Friday</p>
+      
+  </div>
+           <!-- =========     tempContent    ========= -->
+       
+  <div class="tomContent w-100 py-5 px-3 tempCont_h ">
+    <img src="" width="50px " class="" id="tomImage">
+    <h2 class="" id="maxTemp_c" ><span class="supA">o</span> <span class="supC">C</span></h2>
+    <p class="py-1" id="minTemp_c"><span class="supA">o</span> <span class="supC">C</span></p>
+    <p class="sunny mb-3 mt-3" id="tomClear"></p>
+  
+    
+ 
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- ==============     nextDay  ===================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+        
+
+        </section>
+        <!-- ===============  bg-header  ========================== -->
+<div class="bg-header bg-primary position-absolute  top-0 start-0 bottom-0 end-0 bg-opacity-25 ">
+      
+</div>
+    </header>
+
+
+
+<footer class=" py-4 text-center text-white  mt-5 p-0">
+ <div class="footer-body ">
+    <p class="  ">Copyright &#169; 2021 Designed by El-borgy. All rights reserved</p>
+    <div class=" ">
+        <i class="fa-brands fa-facebook fa-fw  fa-1x"></i>
+        <i class="fab fa-twitter fa-fw  fa-1x"></i>
+        <i class="fab fa-pinterest fa-fw  fa-1x"></i>
+       <i class="fa-brands fa-google-plus-g fa-fw  fa-1x"></i>
+    </div>
+   
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/mainWether.js"></script>
+</body>
+
+</html>
